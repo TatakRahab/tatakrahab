@@ -1,0 +1,55 @@
+body{
+    background: black;
+    color: #00FF19;
+    align-items: center;
+    justify-content: center;
+    margin: 350px;
+    display: flex;
+}
+
+
+#progress-container {
+    width: 400px;
+    height: 30px;
+    background-color:black;
+    overflow: hidden;
+    border: #00FF19;
+    border-top: 100px;
+    margin-top: 20px;
+    transition: opacity 1s ease-in-out; /* Add a CSS transition for the opacity property */
+    opacity: 1;
+    overflow: hidden;
+
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #00FF19;
+    width: 0;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, serif;
+    
+}
+#text{
+    font-family: 'Courier New', Courier, serif;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    
+}
+video{
+    transition: 0.5s;
+    width: 800px;
+    height: 600px;
+   
+}
+.aa{
+  
+color: #00FF19;
+font-family: 'Courier New', Courier, serif;
+margin-top: -300px;
+}
+#loading-container{
+    margin-left: 200px;
+}

@@ -1,0 +1,31 @@
+body{
+    background: black;
+}
+form{
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    color: #00FF19;
+    font-family: 'Courier New', Courier, serif;
+    margin-top: 360px;
+    margin-left: 650px;
+}
+input[type="submit"]{
+    display: none;
+}
+input[type="password"]{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #00FF19;
+    width: 85px;
+}
+.access-granted {
+    display: none;
+    background-color: #00FF19;
+    padding: 10px;
+    margin-top: 20px; /* Adjust as needed */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
