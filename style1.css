@@ -1,25 +1,36 @@
-body{
+body {
     background: black;
     color: #00FF19;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 350px;
-    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
+#container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#loading-container, #video-container {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #progress-container {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     height: 30px;
-    background-color:black;
+    background-color: black;
     overflow: hidden;
     border: #00FF19;
     border-top: 100px;
-    margin-top: 20px;
-    transition: opacity 1s ease-in-out; /* Add a CSS transition for the opacity property */
+    margin: 20px auto; /* Center the progress bar horizontally */
+    transition: opacity 1s ease-in-out;
     opacity: 1;
-    overflow: hidden;
-
 }
 
 #progress-bar {
@@ -30,26 +41,28 @@ body{
     line-height: 30px;
     color: white;
     font-family: 'Courier New', Courier, serif;
-    
 }
-#text{
+
+#text {
     font-family: 'Courier New', Courier, serif;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    
 }
-video{
+
+video {
     transition: 0.5s;
-    width: 800px;
-    height: 600px;
-   
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
 }
-.aa{
-  
-color: #00FF19;
-font-family: 'Courier New', Courier, serif;
-margin-top: -300px;
+
+.aa {
+    color: #00FF19;
+    font-family: 'Courier New', Courier, serif;
+    margin-top: -10px;
 }
-#loading-container{
-    margin-left: 200px;
+
+#loading-container {
+    margin-top: 20px;
 }
