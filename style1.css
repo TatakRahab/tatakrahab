@@ -16,7 +16,7 @@ body {
 }
 
 #progress-container {
-    width: 100%;
+    width: 133%;
     max-width: 800px;
     height: 30px;
     background-color: black;
@@ -26,6 +26,7 @@ body {
     margin: 20px auto;
     transition: opacity 1s ease-in-out;
     opacity: 1;
+    margin-left: -40px;
 }
 
 #progress-bar {
