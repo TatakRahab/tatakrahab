@@ -7,17 +7,12 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-size: 16px; /* Set a base font size */
 }
 
 #container {
     width: 100%;
-    max-width: 800px;
     text-align: center;
-}
-
-#loading-container, #video-container {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #progress-container {
@@ -28,7 +23,7 @@ body {
     overflow: hidden;
     border: #00FF19;
     border-top: 100px;
-    margin: 20px auto; /* Center the progress bar horizontally */
+    margin: 20px auto;
     transition: opacity 1s ease-in-out;
     opacity: 1;
 }
@@ -43,20 +38,6 @@ body {
     font-family: 'Courier New', Courier, serif;
 }
 
-#text {
-    font-family: 'Courier New', Courier, serif;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-video {
-    transition: 0.5s;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-top: 20px;
-}
-
 .aa {
     color: #00FF19;
     font-family: 'Courier New', Courier, serif;
@@ -66,4 +47,16 @@ video {
 
 #loading-container {
     margin-top: 20px;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    #progress-container {
+        width: 90%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
 }
