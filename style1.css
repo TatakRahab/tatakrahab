@@ -41,7 +41,6 @@ body {
 .aa {
     color: #00FF19;
     font-family: 'Courier New', Courier, serif;
-    margin-top: -40px;
     margin-bottom: 20px;
 }
 
@@ -59,4 +58,13 @@ body {
         width: 100%;
         height: auto;
     }
+}
+
+#video-container {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
