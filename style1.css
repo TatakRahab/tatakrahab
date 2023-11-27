@@ -16,8 +16,8 @@ body {
 }
 
 #progress-container {
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 800px;
     height: 30px;
     background-color: black;
     overflow: hidden;
@@ -45,7 +45,14 @@ body {
 }
 
 #loading-container {
-    margin-top: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#video-container {
+    position: relative;
 }
 
 /* Media queries for smaller screens */
