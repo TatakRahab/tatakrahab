@@ -1,3 +1,8 @@
+html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
 body {
     background: black;
     color: #00FF19;
@@ -43,17 +48,20 @@ body {
     color: #00FF19;
     font-family: 'Courier New', Courier, serif;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 #loading-container {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 30;
 }
 #video-container {
     position: relative;
+    z-index: 20;
 }
 
 /* Media queries for smaller screens */
@@ -67,4 +75,14 @@ body {
         height: auto;
     }
 }
-
+#Matrix{
+    opacity: 0.35;
+    position: absolute;
+    z-index: 10;
+    margin-top: -670px;
+    margin-left: -800px;
+    
+}
+#text{
+    font-size: 40px;
+}
