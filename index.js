@@ -12,7 +12,7 @@ function passcheck() {
         replacePasswordFormWithBox();
         setTimeout(function () {
             window.location.href = "webpage.html"; // Redirect after a delay
-        }, 2000); // Adjust the delay time as needed
+        }, 4000); // Adjust the delay time as needed
         return false; // Prevent form submission
     }
 }
@@ -45,8 +45,14 @@ function replacePasswordFormWithBox() {
         box.style.opacity = 1;
     }, 100); // Adjust the delay time as needed
 
-     setTimeout(function () {
-                fadeOutElements([videoContainer]);
-                document.getElementById("access-granted").play();
-            }, 200); // Adjust the delay as needed
+    // Add fade-out effect after 2 seconds
+    setTimeout(function () {
+        box.style.transition = 'opacity 1s ease-in-out';
+        box.style.opacity = 0;
+    }, 500); // Adjust the delay time for fade-out as needed
+
+    // Remove the box from the DOM after the fade-out effect completes
+    setTimeout(function () {
+        document.body.removeChild(box);
+    }, 3000); // Adjust the delay time to match the total duration of the fade-in and fade-out effects
 }
