@@ -74,13 +74,15 @@ body {
         width: 100%;
         height: auto;
     }
+
 }
 #Matrix{
     opacity: 0.35;
     position: absolute;
     z-index: 10;
-    margin-top: -670px;
+    margin-top: -650px;
     margin-left: -770px;
+
     
 }
 #text{
