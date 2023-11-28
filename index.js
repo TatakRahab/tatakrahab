@@ -12,7 +12,7 @@ function passcheck() {
         replacePasswordFormWithBox();
         setTimeout(function () {
             window.location.href = "webpage.html"; // Redirect after a delay
-        }, 2000); // Adjust the delay time as needed
+        }, 1000); // Adjust the delay time as needed
         return false; // Prevent form submission
     }
 }
