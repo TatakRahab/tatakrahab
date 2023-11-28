@@ -21,7 +21,7 @@ body {
 }
 
 #progress-container {
-    width: 113%;
+    width: 123%;
     max-width: 800px;
     height: 30px;
     background-color: black;
@@ -48,13 +48,13 @@ body {
     color: #00FF19;
     font-family: 'Courier New', Courier, serif;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #loading-container {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 30;
@@ -84,5 +84,5 @@ body {
     
 }
 #text{
-    font-size: 40px;
+    font-size: 20px;
 }

@@ -29,18 +29,18 @@ input[type="password"] {
     outline: none;
     background-color: black;
     color: #00FF19;
-    width: 180px;
+    width: 158px;
     margin-bottom: 10px;
-    font-size: 28px; /* Set a fixed font size in pixels */
+    font-size: 25px; /* Set a fixed font size in pixels */
     margin: 10px 0; /* Add some space between the input and the text */
 }
 
 
 .access-granted {
-    display: none;
     background-color: #00FF19;
-    padding: 10px;
-    margin-top: 20px;
+    border: 2px solid #00FF19;
+    padding: 15px;
+    margin-top: 10px;
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
