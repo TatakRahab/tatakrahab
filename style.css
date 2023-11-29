@@ -13,7 +13,7 @@ form {
     width: 80%;
     color: #00FF19;
     font-family: 'Courier New', Courier, serif;
-    margin: 20% auto auto 12%; /* Adjust as needed */
+    margin: 20% auto auto 8.5%; /* Adjust as needed */
     position: absolute;
     z-index: 20;
     font-size: 20px;
@@ -82,12 +82,22 @@ input[type="password"] {
 
     .div1 {
         text-align: center; /* Center the text */
-        width: 80%; /* Take full width */
+        width: 50%; /* Take full width */
+        margin: 30% auto auto 50%;
+        font-size: 20px;
+
+
     }
 
     input[type="password"] {
         width: 40%; /* Adjust the width as needed */
-        font-size: 16px; /* Set a fixed font size in pixels */
+        font-size: 10px; /* Set a fixed font size in pixels */
         margin: 10px 0; /* Add some space between the input and the text */
     }
+    .access-granted{
+        left:30%;
+        top:50%;
+    }
+    
+
 }
