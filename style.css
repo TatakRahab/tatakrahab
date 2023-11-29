@@ -64,6 +64,7 @@ input[type="password"] {
 .div1 {
     text-align: center; /* Center the text */
     width: 100%; /* Take full width */
+    margin-left:100px ;
 }
 
 @media only screen and (max-width: 600px) {
