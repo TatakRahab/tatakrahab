@@ -189,10 +189,10 @@ function showTicketBoxes() {
     var ticketBoxRight = document.getElementById("ticketBoxRight");
 
     ticketBoxLeft.style.width = "30%";
-    ticketBoxLeft.style.opacity = .5;
+    ticketBoxLeft.style.opacity = 1;
 
     ticketBoxRight.style.width = "20%";
-    ticketBoxRight.style.opacity = .5;
+    ticketBoxRight.style.opacity = 1;
 
     // Hide the left and right side boxes and trailer boxes and extra boxes
     hideSideBoxes();

@@ -53,6 +53,10 @@ object-fit: cover; /* or "contain" based on your preference */
 }
 .title-page h1:hover{
     cursor: pointer;
+    background: linear-gradient(137deg, rgb(212, 200, 200) 50%, rgb(142, 33, 33) 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+
 }
 
 
@@ -295,7 +299,6 @@ object-fit: cover; /* or "contain" based on your preference */
               font-weight: bold;
               color: white ; /* Full opacity for text */
               letter-spacing: 2px;
-              opacity: 0;
           }
 
 .schedule-box-left,
