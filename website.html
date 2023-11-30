@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="icon" type="image/png" href="403418114_1521916045221737_1520984576941981417_n.png">
+        <script src="website.js"></script>
+        <title>Rahab Films</title>
+        
+    </head>
+    <body>
+
+    <div class="container">
+
+        <div class="title-page" id="titlePage">
+            <h1 onclick="toggleMenu()" id="greenDivideText">THE GREEN DIVIDE</h1>
+            <img src="IMG_3991.JPG" class="img">
+        </div>
+
+        <!-- Menu content -->
+        <div class="menu" id="menu">
+            <span class="close-btn" onclick="closeMenu()">×</span>
+            <a onclick="showSideBoxes()">ABOUT</a>
+            <a onclick="showExtraBoxes()">TRAILER</a>
+            <a onclick="showTicketBoxes()">TICKETS</a>
+            <a onclick="showScheduleBoxes()">SCHEDULE</a>
+        </div>
+
+        <!-- Left and Right side boxes -->
+        <div class="side-box left-box" id="leftBox">
+            <img class="img1" src="404636775_122140086944033063_6001873162974845155_n.jpg">
+        </div>
+        <div class="side-box right-box" id="rightBox">
+            Overview:
+            This documentary seeks to delve into the environmental challenges posed by our world's rapid urbanization, exposing the schisms that keep us from a sustainable future.
+    </div>
+    <!-- Additional Right side boxes -->
+    <div class="side-box right-box right-box-1" id="rightBox1">Duration: 40min</div>
+    <div class="side-box right-box right-box-2" id="rightBox2"><a href="production.html"style="color:white;text-decoration:none">PRODUCTION</a></div>
+    <div class="side-box right-box right-box-3" id="rightBox3"><a href="members.html"style="color:white;text-decoration:none">MEMBERS</a></div>
+
+    <!-- Additional Left and Right boxes for Trailers -->
+    <div class="extra-box-left" id="extraBoxLeft" onclick="handleExtraBoxClick('extraBoxLeft')" style="display: flex;margin-left: -100px;margin-top: -100px;">
+        <div style="color: white;margin-top: -260px; margin-left: 50px;">TRAILER</div>
+        <div><img src="frame.png" width="200px" height="200px" style="margin-top: 60px;margin-left: -150px;"></div>
+    </div>
+    <div class="extra-box-right" id="extraBoxRight" onclick="handleExtraBoxClick('extraBoxRight')">
+        <span class="pass">PASSWORD: <br> JlqJLsVkMAjNEaIRVd
+    </div>
+    <!-- Ticket side boxes -->
+    <div class="side-box ticket-box-left" id="ticketBoxLeft">
+        <div class="left-box left-box-ticket" id="leftBoxTicket">
+            <!-- Content for the left box associated with ticket -->
+        </div>
+        <div><span style="color: white;">Ticket Reservations</span></div>
+    </div>
+    <div class="side-box ticket-box-right" id="ticketBoxRight"><span style="color: white;">PRICE</span></div>
+
+    <!-- Schedule side boxes -->
+    <div class="side-box schedule-box-left" id="scheduleBoxLeft">
+        <div class="left-box left-box-schedule" id="leftBoxSchedule">
+            <!-- Content for the left box associated with schedule -->
+        </div>
+        <div style="width: 300px;margin-top: -480px;margin-left: 70px;">DATE</div>
+        <div style="margin-top: 12px;border-radius: 10px;height: 40px;"><img style="border-radius: 10px;height: 150px;width: 350px;" src="Screenshot 2023-11-30 073516.png"></div>
+
+    </div>
+
+    <div class="side-box schedule-box-right" id="scheduleBoxRight"style="height: 600px;margin-top:-100px;display:flex;align-items: center;justify-content: center;">
+        <div style="width: 300px;margin-top: -480px;margin-left: 265px;display: flex;justify-content: center;align-items: center;">TIME</div>
+        <div style="margin-bottom: -400px;margin-left: -46px;">
+            <div class="date1" style="margin-top: -400px; margin-left: -140px;width: 300px;font-size: 15px;font-family: helvetica;letter-spacing: 3px;line-height: 20px;">
+                -------------------------------
+                <br>
+                DECEMBER 5
+                <br>
+                7:50 A.M - 8:35 A.M
+                <br>
+                9:30 A.M - 10:15 A.M
+                <br>
+                11:10 A.M - 11:55 A.M
+                <br>
+                1:50 P.M - 2:35 P.M
+                <br>
+                3:30 P.M - 4:15 P.M
+                <br>
+                -------------------------------
+            </div>
+            <div class="date2" style="margin-top: 2px; margin-left: -140px;width: 400px;font-size: 15px;font-family: helvetica;letter-spacing: 3px;width: 300px;line-height: 20px;">
+                
+                DECEMBER 6
+                <br>
+                7:00 A.M - 7:45 A.M
+                <br>
+                8:40 A.M - 9:25 A.M
+                <br>
+                10:20 A.M - 11:05 A.M
+                <br>
+                1:00 P.M - 1:45 P.M
+                <br>
+                2:40 P.M - 3:25 P.M
+                <br>
+                -------------------------------
+
+        
+            </div>
+            <div class="date3"style="margin-top: 2px; margin-left: -140px;width: 400px;font-size: 15px;font-family: helvetica;letter-spacing: 3px;width: 300px;line-height: 20px;">
+                DECEMBER 7
+                <br>
+                7:50 A.M - 8:35 A.M
+                <br>
+                9:30 A.M - 10:15 A.M
+                <br>
+                11:10 A.M - 11:55 A.M
+                <br>
+                1:50 P.M - 2:35 P.M
+                <br>
+                -------------------------------
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    </body>
+    </html>

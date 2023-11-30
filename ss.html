@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rahab Films</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="icon" type="image/png" href="lgo.png">
+    <script src="index.js"></script>
+    <script src="index1.js"></script>
+    <script src="global.js"></script>
+</head>
+<body>
+    <form class="passform" id="form" action="webpage.html" onsubmit="return passcheck()">
+       <div class="div1"> 
+        <div class="">Enter Password</div> 
+        [ <input type="password" required id="pass1" maxlength="18" > ]
+        <input type="submit" value="Enter">
+       </div>    
+    </form>
+    <div class="access-granted" id="accessGrantedMessage">
+        Access Granted
+    </div>
+    <div class="matrix-container">
+        <canvas id="Matrix"></canvas>
+    </div>
+
+    <div id="container">
+        <div id="loading-container">
+            <div id="text" style="font-family: 'Courier New', Courier, serif;">Accessing the File....</div>
+            <div id="progress-container">
+                <div id="progress-bar">0%</div>
+            </div>
+        </div>
+
+        <div id="video-container" style="opacity: 0;">
+            <div class="aa"> > Play Encrypted File....</div>
+            <div>
+                <iframe width="860" height="455" src="https://www.youtube.com/embed/l-p0EFT1c7s?si=AyJf6GbtowgboJ2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Combine your JavaScript code here
+        // ...
+    </script>
+
+    <style>
+        /* Combine your CSS code here */
+        /* ... */
+    </style>
+
+</body>
+</html>
