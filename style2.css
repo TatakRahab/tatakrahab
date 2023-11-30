@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+@font-face {
+    font-family: "FONTSPRING DEMO - Zuume Rough Regular";
+    src: url("fontspring-demo-zuumerough-regular.otf");
+}
 
 html, body {
     height: 100%;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 body {
@@ -10,9 +15,9 @@ body {
     overflow-x: hidden;
 }
 
-
 .container {
     height: 100%;
+    width: 100%; /* Set width to 100% */
 }
 
 
@@ -35,26 +40,34 @@ object-fit: cover; /* or "contain" based on your preference */
 }
 
 .title-page h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 120px;
+    font-family: "FONTSPRING DEMO - Zuume Rough Regular";
+        font-size: 190px;
     font-weight: 800;
     margin: 0;
     position: absolute;
-    z-index: 0;
+    z-index: 10;
     margin-top: -30px;
     margin-left: 250px;
     margin-right: auto;
     
     /* Apply gradient for the text */
-    background: linear-gradient(-137deg, rgb(212, 200, 200) 50%, rgb(142, 33, 33) 50%);
+    background: linear-gradient(-137deg, rgb(212, 200, 200) 50%, rgb(131, 18, 18) 50%);
     -webkit-background-clip: text;
     color: transparent;
     
 }
-.title-page h1:hover{
+.title-page h1:hover {
     cursor: pointer;
-
+    background: linear-gradient(137deg, rgb(212, 200, 200) 50%, rgb(131, 18, 18) 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 10.5s; /* Slow down the background transition */
 }
+.blurred-text {
+    /* Add filter for text blur */
+    filter: blur(100px);
+}
+
 
 
 /* Your existing styles here */
@@ -82,7 +95,48 @@ object-fit: cover; /* or "contain" based on your preference */
             border-radius: 20px;
 
         }
-
+        .menu a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .menu .icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: -40px;
+        }
+        
+        .menu .icon {
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            color: #000;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .menu .icon:hover {
+            background-color: #ddd; /* Add a hover effect */
+        }
+        
+        .menu a svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        .menu a i {
+            font-size: 24px;
+        }
         .menu.show {
             opacity: 1;
             visibility: visible;
@@ -286,11 +340,11 @@ object-fit: cover; /* or "contain" based on your preference */
           
           .ticket-box-right {
               margin-left: 230px;
-              margin-top: 120px;
+              margin-top: -120px;
               display: flex;
               align-items: center;
               justify-content: center;
-              height: 100px;
+              height: 400px;
               font-size: 30px;
               font-family: 'Poppins';
               font-weight: bold;

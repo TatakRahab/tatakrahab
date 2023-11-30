@@ -2,11 +2,25 @@ function toggleMenu() {
     var menu = document.getElementById("menu");
     var greenDivideText = document.getElementById("greenDivideText");
 
+    var menu = document.getElementById("menu");
+    var the = document.getElementById("the");
+
     // Check if the menu is open
     if (!menu.classList.contains("show")) {
         // Menu is not open, toggle the menu and apply styles to THE GREEN DIVIDE
         menu.classList.toggle("show");
         greenDivideText.classList.toggle("blurred-text");
+
+        // Your other code when the menu is opened...
+
+    } else {
+        // Menu is open, do not toggle THE GREEN DIVIDE
+        // You can add additional logic or actions here if needed
+    }
+    if (!menu.classList.contains("show")) {
+        // Menu is not open, toggle the menu and apply styles to THE GREEN DIVIDE
+        menu.classList.toggle("show");
+        the.classList.toggle("blurred-text");
 
         // Your other code when the menu is opened...
 
@@ -49,7 +63,6 @@ function showSideBoxes() {
     // Show the additional right side boxes with fade-in animation
     var rightBox1 = document.getElementById("rightBox1");
     var rightBox2 = document.getElementById("rightBox2");
-    var rightBox3 = document.getElementById("rightBox3");
 
     rightBox1.style.width = "20%";
     rightBox1.style.opacity = 1;
@@ -57,8 +70,7 @@ function showSideBoxes() {
     rightBox2.style.width = "20%";
     rightBox2.style.opacity = 1;
 
-    rightBox3.style.width = "20%";
-    rightBox3.style.opacity = 1;
+
 
     hideExtraBoxes();
     hideTicketBoxes();
@@ -81,7 +93,6 @@ function hideSideBoxes() {
     // Hide the additional right side boxes with fade-out animation
     var rightBox1 = document.getElementById("rightBox1");
     var rightBox2 = document.getElementById("rightBox2");
-    var rightBox3 = document.getElementById("rightBox3");
 
     rightBox1.style.width = "0";
     rightBox1.style.opacity = 0;
@@ -89,8 +100,6 @@ function hideSideBoxes() {
     rightBox2.style.width = "0";
     rightBox2.style.opacity = 0;
 
-    rightBox3.style.width = "0";
-    rightBox3.style.opacity = 0;
 
 
 
@@ -131,11 +140,9 @@ function fadeOutSideBoxes() {
     // Fade out the additional right side boxes
     var rightBox1 = document.getElementById("rightBox1");
     var rightBox2 = document.getElementById("rightBox2");
-    var rightBox3 = document.getElementById("rightBox3");
 
     rightBox1.style.opacity = 0;
     rightBox2.style.opacity = 0;
-    rightBox3.style.opacity = 0;
 }
 
 
@@ -191,7 +198,7 @@ function showTicketBoxes() {
     ticketBoxLeft.style.width = "30%";
     ticketBoxLeft.style.opacity = 1;
 
-    ticketBoxRight.style.width = "20%";
+    ticketBoxRight.style.width = "30%";
     ticketBoxRight.style.opacity = 1;
 
     // Hide the left and right side boxes and trailer boxes and extra boxes
@@ -296,3 +303,15 @@ function toggleMenu() {
         hideExtraBoxes();
     }
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.querySelector('.menu');
+    const titleText = document.querySelector('.title-page h1');
+
+    menu.addEventListener('mouseenter', function () {
+        titleText.classList.add('blurred-text');
+    });
+
+    menu.addEventListener('mouseleave', function () {
+        titleText.classList.remove('blurred-text');
+    });
+});

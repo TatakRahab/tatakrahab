@@ -5,17 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style2.css">
         <link rel="icon" type="image/png" href="403418114_1521916045221737_1520984576941981417_n.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="website.js"></script>
         <title>Rahab Films</title>
         
     </head>
     <body>
-
+    <div id="the"style="font-size: 30px;font-family: bell-mt ;color: black;position: absolute;z-index: 10;margin-top: 270px;margin-left: 738px;" >THE</div>
     <div class="container">
-
         <div class="title-page" id="titlePage">
-            <h1 onclick="toggleMenu()" id="greenDivideText">THE GREEN DIVIDE</h1>
             <img src="IMG_3991.JPG" class="img">
+            <h1 onclick="toggleMenu()" id="greenDivideText" style="margin-left: 408px;"> GREEN DIVIDE</h1>
         </div>
 
         <!-- Menu content -->
@@ -25,6 +26,16 @@
             <a onclick="showExtraBoxes()">TRAILER</a>
             <a onclick="showTicketBoxes()">TICKETS</a>
             <a onclick="showScheduleBoxes()">SCHEDULE</a>
+        
+            <div class="icons">
+                <a href="https://www.youtube.com/channel/UC2kP08TAvUxJ9Kaipw8rmYQ" target="_blank" class="icon" id="youtube-icon">
+                    <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61553870560792" target="_blank" class="icon" id="facebook-icon">
+                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                </a>
+            </div>
+            
         </div>
 
         <!-- Left and Right side boxes -->
@@ -38,8 +49,7 @@
     </div>
     <!-- Additional Right side boxes -->
     <div class="side-box right-box right-box-1" id="rightBox1">Duration: 40min</div>
-    <div class="side-box right-box right-box-2" id="rightBox2"><a href="production.html"style="color:white;text-decoration:none">PRODUCTION</a></div>
-    <div class="side-box right-box right-box-3" id="rightBox3"><a href="members.html"style="color:white;text-decoration:none">MEMBERS</a></div>
+    <div class="side-box right-box right-box-2" id="rightBox2"><a href="members.html"style="color:white;text-decoration:none">MEMBERS</a></div>
 
     <!-- Additional Left and Right boxes for Trailers -->
     <div class="extra-box-left" id="extraBoxLeft" onclick="handleExtraBoxClick('extraBoxLeft')" style="display: flex;margin-left: -100px;margin-top: -100px;">
@@ -56,14 +66,18 @@
         </div>
         <div><span style="color: white;">Ticket Reservations</span></div>
     </div>
-    <div class="side-box ticket-box-right" id="ticketBoxRight"><span style="color: white;">PRICE</span></div>
+    <div class="side-box ticket-box-right" id="ticketBoxRight" style="margin-left: 100px;margin-top: -10px;">
+        <div style="margin-top: -300px;margin-left: 110px;"><span style="color: white;">PRICE</span></div>
+        <div style="margin-left: -220px;margin-top: -10px;"><img src="Black Modern Movie Ticket.jpg" style="width: 340px; height: 200px;"></div>
+        <div class=""style="margin-bottom:-240px;margin-left:-300px;">10 Pesos only!!!</div>
+    </div>
 
     <!-- Schedule side boxes -->
     <div class="side-box schedule-box-left" id="scheduleBoxLeft">
         <div class="left-box left-box-schedule" id="leftBoxSchedule">
             <!-- Content for the left box associated with schedule -->
         </div>
-        <div style="width: 300px;margin-top: -480px;margin-left: 70px;">DATE</div>
+        <div style="width: 300px;margin-top: -480px;margin-left: 70px;font-size: 20px;">LAST BATCH  OF SCREENING PER DAY</div>
         <div style="margin-top: 12px;border-radius: 10px;height: 40px;"><img style="border-radius: 10px;height: 150px;width: 350px;" src="Screenshot 2023-11-30 073516.png"></div>
 
     </div>
